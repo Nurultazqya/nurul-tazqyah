@@ -1,0 +1,14 @@
+# Mengambil input awal dari pengguna
+angka = int(input("Masukkan sebuah angka (masukkan angka negatif untuk berhenti): "))
+
+# Selama angka yang dimasukkan bukan angka negatif, loop akan berjalan
+while angka >= 0:
+    if angka % 2 == 0:
+        print(f"{angka} adalah bilangan genap.")
+    else:
+        print(f"{angka} adalah bilangan ganjil.")
+    
+    # Meminta input berikutnya
+    angka = int(input("Masukkan angka lain (masukkan angka negatif untuk berhenti): "))
+
+print("Program selesai karena angka negatif dimasukkan.")
